@@ -1,0 +1,10 @@
+/my-project
+├── /frontend
+│   ├── /css
+│   ├── /js
+│   ├── index.html        (Login Page)
+│   ├── student.html      (Student Page)
+│   ├── admin.html        (Admin Portal)
+│   └── lecturer.html     (Lecturer Portal)
+├── /backend              (Future Python/Flask/FastAPI files)
+└── /pi-scripts           (Future Python scripts for Raspberry Pi)
