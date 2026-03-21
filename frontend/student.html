@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - CIHE Attendance App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>CIHE AttendanceApp</h2>
+            <span>Real-time Facial Recognition</span>
+        </div>
+        <div class="user-status">Logged in as <strong>Student</strong></div>
+        <nav>
+            <a href="#" class="nav-btn active">Home</a>
+            <button onclick="window.location.href='login.html'" class="logout-btn">Logout</button>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <header class="portal-header">
+            <h1>Student Portal</h1>
+            <p>Raspberry Pi • OpenCV • Secure Sync</p>
+        </header>
+
+        <section class="dashboard-grid">
+            <!-- CHECK-IN KIOSK -->
+            <div class="card kiosk">
+                <div class="card-header">
+                    <h3>Check-in Kiosk</h3>
+                    <button class="btn-primary">Start Scan</button>
+                </div>
+                <div class="camera-preview">Camera Preview</div>
+                <div class="enroll-section">
+                    <h4>Enroll / Update Face</h4>
+                    <div class="input-group">
+                        <button class="btn-secondary">Capture</button>
+                        <button class="btn-secondary">Upload</button>
+                        <input type="text" placeholder="Student ID">
+                        <button class="btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ATTENDANCE STATUS -->
+            <div class="card status">
+                <div class="card-header">
+                    <h3>Attendance Status</h3>
+                    <button class="btn-outline">View History</button>
+                </div>
+                <div class="status-content">
+                    <p class="status-main">Awaiting Scan</p>
+                    <p class="status-sub">ICT307 • 28 Sept 2025 • 9:00 AM</p>
+                </div>
+            </div>
+
+            <!-- ATTENDANCE HISTORY TABLE -->
+            <div class="card history">
+                <h3>Attendance History</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Course</th>
+                            <th>Session</th>
+                            <th>Status</th>
+                            <th>Check-in</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>28/09/2025</td>
+                            <td>ICT307</td>
+                            <td>Lecture</td>
+                            <td class="text-present">Present</td>
+                            <td>09:02</td>
+                        </tr>
+                        <tr>
+                            <td>21/09/2025</td>
+                            <td>ICT307</td>
+                            <td>Tutorial</td>
+                            <td class="text-absent">Absent</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
